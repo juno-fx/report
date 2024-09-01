@@ -18,7 +18,7 @@ body:
   - type: input
     id: "url"
     attributes:
-      label: "URL in Hubble"
+      label: "URL in Hubble."
       description: "URL in Hubble so we can debug ourselves if needed."
     validations:
       required: false
