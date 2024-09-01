@@ -1,20 +1,45 @@
----
-name: Feature request
-about: Suggest an idea for this project
-title: ''
-labels: ''
-assignees: ''
-
----
-
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
-
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
-
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
-
-**Additional context**
-Add any other context or screenshots about the feature request here.
+name: Feature Request
+description: "Have a great new idea? We'd love to know, please search through our existing feature requests, and upvote it if it's already been filed."
+labels: ["Feature requests"]
+body:
+  - type: checkboxes
+    attributes:
+      label: "Dupe Check"
+      options:
+        - label: "I have [searched Juno's feature requests](https://github.com/juno-fx/report/issues?q=is%3Aopen+is%3Aissue+label%3A%22Feature+Request%22) and there are no duplicates"
+          required: true
+  - type: textarea
+    id: "describe-solution"
+    attributes:
+      label: "Describe the solution you'd like?"
+      description: "A clear and concise description of what you want to happen."
+    validations:
+      required: true
+  - type: textarea
+    id: "related-to-problem"
+    attributes:
+      label: "Is your feature request related to a problem? Please describe."
+      description: "A clear and concise description of what the problem is."
+      placeholder: "I'm always frustrated when [...]"
+    validations:
+      required: false
+  - type: textarea
+    id: "additional-context"
+    attributes:
+      label: "Additional context"
+      description: "Add any other context or screenshots about the feature request here. If you want to upload a picture you can drag one in from Finder."
+    validations:
+      required: false
+  - type: dropdown
+    id: "importance"
+    attributes:
+      label: "How important is this feature to you?"
+      multiple: false
+      options:
+        - "1 (Not too important)"
+        - "2"
+        - "3"
+        - "4"
+        - "5 (Can't work without it!)"
+    validations:
+      required: true
