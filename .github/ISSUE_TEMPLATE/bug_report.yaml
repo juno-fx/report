@@ -8,6 +8,17 @@ body:
       options:
         - label: "I have [searched Juno's bugs](https://github.com/juno-fx/report/issues?q=is%3Aopen+is%3Aissue+label%3Abug) and there are no duplicates"
           required: true
+  - type: dropdown
+    id: "browser"
+    attributes:
+      label: "Browser"
+      multiple: false
+      options:
+        - Chrome Based
+        - Firefox
+        - Other
+    validations:
+      required: true
   - type: textarea
     id: "describe-the-bug"
     attributes:
@@ -39,17 +50,6 @@ body:
       description: "If applicable, add screenshots/videos to help explain your problem. While optional, screenshots help expedite the time in which your bug is addressed."
     validations:
       required: false
-  - type: dropdown
-    id: "browser"
-    attributes:
-      label: "Browser"
-      multiple: false
-      options:
-        - Chrome Based
-        - Firefox
-        - Other
-    validations:
-      required: true
   - type: dropdown
     id: "regression"
     attributes:
