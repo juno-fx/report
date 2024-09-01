@@ -1,3 +1,12 @@
+---
+name: Feature Request
+about: Create a report to help us improve
+title: ''
+labels: ''
+assignees: ''
+
+---
+
 name: Feature Request
 description: "Have a great new idea? We'd love to know, please search through our existing feature requests, and upvote it if it's already been filed."
 labels: ["Feature requests"]
