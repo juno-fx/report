@@ -8,6 +8,20 @@ body:
       options:
         - label: "I have [searched Juno's feature requests](https://github.com/juno-fx/report/issues?q=is%3Aopen+is%3Aissue+label%3A%22Feature+Request%22) and there are no duplicates"
           required: true
+  - type: input
+    id: "service"
+    attributes:
+      label: "Serivce this pertains to."
+      description: "This should be provided so we know where to start looking."
+    validations:
+      required: false
+  - type: input
+    id: "url"
+    attributes:
+      label: "URL in Hubble"
+      description: "URL in Hubble so we can debug ourselves if needed."
+    validations:
+      required: false
   - type: textarea
     id: "describe-solution"
     attributes:
