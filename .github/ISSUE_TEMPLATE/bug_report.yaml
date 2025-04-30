@@ -15,13 +15,6 @@ body:
       description: "This should be provided so we know where to start looking."
     validations:
       required: false
-  - type: input
-    id: "url"
-    attributes:
-      label: "URL in Hubble."
-      description: "URL in Hubble so we can debug ourselves if needed."
-    validations:
-      required: false
   - type: dropdown
     id: "browser"
     attributes:
@@ -49,21 +42,6 @@ body:
       placeholder: "Steps to reproduce: 1. Go to '...' 2. Click on '...' 3. Scroll down to '...' 4. See error '...'"
     validations:
       required: true
-  - type: textarea
-    id: "expected-behavior"
-    attributes:
-      label: "Expected behavior"
-      description: "A clear and concise description of what you expected to happen."
-      placeholder: Tell us what you expect to see.
-    validations:
-      required: false
-  - type: textarea
-    id: "screenshots"
-    attributes:
-      label: "Screenshots"
-      description: "If applicable, add screenshots/videos to help explain your problem. While optional, screenshots help expedite the time in which your bug is addressed."
-    validations:
-      required: false
   - type: dropdown
     id: "regression"
     attributes:
@@ -75,13 +53,6 @@ body:
         - "Yes, this bug started recently or with an X Orion version"
     validations:
       required: true
-  - type: input
-    id: "orion-version-regression-date"
-    attributes:
-      label: "Recent working Orion date"
-      description: "Most recent date that Orion worked as expected"
-    validations:
-      required: false
   - type: dropdown
     id: "blocker"
     attributes:
