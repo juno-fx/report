@@ -11,7 +11,7 @@ body:
   - type: input
     id: "service"
     attributes:
-      label: "Serivce this pertains to."
+      label: "Service this pertains to."
       description: "This should be provided so we know where to start looking."
     validations:
       required: false
