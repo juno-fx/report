@@ -15,6 +15,27 @@ body:
       description: "This should be provided so we know where to start looking."
     validations:
       required: false
+  - type: input
+    id: "orion-version"
+    attributes:
+      label: "Current Orion Deployment Version"
+      description: "Please let us know the Orion version you are on."
+    validations:
+      required: true
+  - type: input
+    id: "genesis-version"
+    attributes:
+      label: "Current Genesis Deployment Version"
+      description: "Please let us know the Genesis version you are on."
+    validations:
+      required: true
+  - type: input
+    id: "service"
+    attributes:
+      label: "Service this pertains to."
+      description: "This should be provided so we know where to start looking."
+    validations:
+      required: false
   - type: dropdown
     id: "browser"
     attributes:
@@ -40,17 +61,6 @@ body:
       label: "To reproduce"
       description: "Bug reports with clear reproduction will get prioritized higher and addressed more quickly."
       placeholder: "Steps to reproduce: 1. Go to '...' 2. Click on '...' 3. Scroll down to '...' 4. See error '...'"
-    validations:
-      required: true
-  - type: dropdown
-    id: "regression"
-    attributes:
-      label: "Regression"
-      description: "Is this a regression (used to work in a previous Orion version)?"
-      multiple: false
-      options:
-        - "No, this bug or issue has existed throughout my experience using Orion"
-        - "Yes, this bug started recently or with an X Orion version"
     validations:
       required: true
   - type: dropdown
