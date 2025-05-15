@@ -11,21 +11,14 @@ body:
   - type: input
     id: "service"
     attributes:
-      label: "Serivce this pertains to."
+      label: "Service this pertains to."
       description: "This should be provided so we know where to start looking."
-    validations:
-      required: false
-  - type: input
-    id: "url"
-    attributes:
-      label: "URL in Hubble."
-      description: "URL in Hubble so we can debug ourselves if needed."
     validations:
       required: false
   - type: textarea
     id: "describe-solution"
     attributes:
-      label: "Describe the solution you'd like?"
+      label: "Describe the feature you'd like?"
       description: "A clear and concise description of what you want to happen."
     validations:
       required: true
@@ -35,13 +28,6 @@ body:
       label: "Is your feature request related to a problem? Please describe."
       description: "A clear and concise description of what the problem is."
       placeholder: "I'm always frustrated when [...]"
-    validations:
-      required: false
-  - type: textarea
-    id: "additional-context"
-    attributes:
-      label: "Additional context"
-      description: "Add any other context or screenshots about the feature request here. If you want to upload a picture you can drag one in from Finder."
     validations:
       required: false
   - type: dropdown
