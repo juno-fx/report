@@ -15,20 +15,6 @@ body:
       description: "This should be provided so we know where to start looking."
     validations:
       required: false
-  - type: input
-    id: "orion-version"
-    attributes:
-      label: "Current Orion Deployment Version"
-      description: "Please let us know the Orion version you are on."
-    validations:
-      required: true
-  - type: input
-    id: "genesis-version"
-    attributes:
-      label: "Current Genesis Deployment Version"
-      description: "Please let us know the Genesis version you are on."
-    validations:
-      required: true
   - type: textarea
     id: "describe-solution"
     attributes:
